@@ -86,7 +86,7 @@ export default function NewsletterSignupForm() {
   );
 
   return (
-    <form onSubmit={handleSubmit} noValidate>
+    <form onSubmit={handleSubmit} noValidate className={styles.NewsletterSignupForm}>
       <div className={`${styles.formFieldsContainer} row`}>
         {error && (
           <div className="col-12 mb-5">

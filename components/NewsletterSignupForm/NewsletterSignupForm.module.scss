@@ -1,6 +1,17 @@
 @import "styles/mixins";
 @import "styles/variables";
 
+.NewsletterSignupForm {
+  margin-bottom: $content-spacer;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: $content-spacer-md;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-bottom: $content-spacer-lg;
+  }
+}
+
 .formFieldsContainer {
   margin-bottom: map-get($spacers, 6);
 }

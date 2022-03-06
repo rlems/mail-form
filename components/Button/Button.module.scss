@@ -7,4 +7,8 @@
   padding: map-get($spacers, 4);
   border: none;
   color: $color-white;
+
+  &:disabled {
+    background-color: $color-grey;
+  }
 }
