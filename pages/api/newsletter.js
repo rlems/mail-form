@@ -23,7 +23,6 @@ export default async function handler(req, res) {
         email_address: req.body.email,
         status: "subscribed",
       });
-      console.log(response);
       res.status(200).json({ success: true })
     } else {
       res.status(400).json({success: false})
