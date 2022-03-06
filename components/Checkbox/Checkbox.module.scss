@@ -1,0 +1,15 @@
+@import "styles/variables";
+@import "components/Input/Input.module";
+
+.Checkbox {
+  @extend .Input;
+  margin-right: map-get($spacers, 4);
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 0;
+
+  &:checked {
+    color: $color-charcoal;
+    background-color: $color-charcoal;
+  }
+}

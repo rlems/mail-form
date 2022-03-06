@@ -1,0 +1,59 @@
+@import "./fonts";
+@import "./variables";
+@import '~bootstrap/scss/bootstrap';
+@import "./typography";
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: $typography-color;
+  background-color: $bg-color-white;
+  font-family: Lausanne, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  @include media-breakpoint-up(md) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+textarea:focus, input:focus, select:focus{
+  outline: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-charcoal;
+  opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $color-charcoal;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $color-charcoal;
+}

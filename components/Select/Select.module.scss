@@ -1,0 +1,6 @@
+@import "styles/variables";
+@import "components/Input/Input.module";
+
+.Select {
+  @extend .Input;
+}

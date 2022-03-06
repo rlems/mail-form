@@ -1,0 +1,17 @@
+@import "styles/mixins";
+@import "styles/variables";
+
+.FormSubmitSuccessNotice {
+  width: 100%;
+  background-color: $color-moss-green;
+  border-radius: .8rem .8rem 8rem .8rem;
+  padding: 5rem;
+
+  @include media-breakpoint-up(md) {
+    border-bottom-right-radius: 16rem;
+    padding: 10rem 9rem;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 15rem 12rem;
+  }
+}

@@ -1,0 +1,12 @@
+
+@import '~bootstrap/scss/mixins';
+
+@mixin media-query-small {
+  @media (max-width: 767px) { @content; }
+}
+@mixin media-query-medium {
+  @media (min-width: 768px) and (max-width: 1023px) { @content; }
+}
+@mixin media-query-large {
+  @media (min-width: 1024px) { @content; }
+}

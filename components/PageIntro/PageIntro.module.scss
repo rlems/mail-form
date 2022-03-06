@@ -1,0 +1,21 @@
+@import "styles/mixins";
+@import "styles/variables";
+
+.PageIntro {
+  margin-bottom: $content-spacer;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: map-get($spacers, 4);
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: map-get($spacers, 5);
+  }
+  @include media-breakpoint-up(lg) {
+    margin-bottom: map-get($spacers, 6);
+  }
+}
+

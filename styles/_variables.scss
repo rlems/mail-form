@@ -1,0 +1,55 @@
+
+// COLORS
+$color-white: #FFF;
+$color-light-grey: #F3F3F3;
+$color-grey: #CCCCCC;
+$color-charcoal: #242424;
+$color-water-blue: #B7CBD8;
+$color-moss-green: #A4A897;
+$color-earth-brown: #C3BDB8;
+$color-error: #E97262;
+
+$bg-color-white: $color-white;
+$bg-color-grey: $color-light-grey;
+
+$typography-color: $color-charcoal;
+$typography-color-footnotes: #CCCCCC;
+
+// GRID
+$grid-breakpoints: (
+        xs: 0,
+        sm: 375px,
+        md: 768px,
+        lg: 1024px,
+        xl: 1440px,
+        xxl: 1920px
+);
+$grid-gutter-width: 2rem;
+
+$spacer: .8rem;
+$spacers: (
+        0: 0,
+        1: $spacer * .25,
+        2: $spacer * .5,
+        3: $spacer,
+        4: $spacer * 2,
+        5: $spacer * 3,
+        6: $spacer * 4,
+        7: $spacer * 6,
+        8: $spacer * 8,
+        9: $spacer * 10,
+);
+
+$content-spacer: 6rem;
+$content-spacer-md: 10.4rem;
+$content-spacer-lg: 19.2rem;
+
+
+// nav
+$nav-link-padding-y:                0;
+$nav-link-padding-x:                1.6rem;
+$nav-link-font-size:                null;
+$nav-link-font-weight:              null;
+$nav-link-color:                    $color-charcoal;
+$nav-link-hover-color:              rgba($color-charcoal, 0.6);
+$nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;

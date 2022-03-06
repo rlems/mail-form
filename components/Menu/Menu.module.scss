@@ -1,0 +1,57 @@
+@import "styles/variables";
+
+.menuButton {
+  width: 3.2rem;
+  height: 3.2rem;
+  position: fixed;
+  right: $spacer;
+  top: $spacer;
+  z-index: 9999999999;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.2rem;
+    height: 2px;
+    background-color: $color-charcoal;
+    transition: transform .3s ease-in-out;
+  }
+
+  &:before {
+    transform: translate3d(5px,20px,0) rotate(0deg);
+  }
+  &:after {
+    transform: translate3d(5px,12px,0) rotate(0deg);
+  }
+
+  &.active {
+    &:before {
+      transform: translate3d(5px, 15px, 0) rotate(45deg);
+    }
+    &:after {
+      transform: translate3d(5px, 15px, 0) rotate(-45deg);
+    }
+  }
+}
+
+.sideMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  background-color: transparent;
+  transition: background-color 500ms;
+  display: flex;
+  align-items: center;
+  padding: map-get($spacers, 6);
+
+  &.show {
+    visibility: visible;
+    background-color: $color-moss-green;
+  }
+}

@@ -1,0 +1,23 @@
+@import "styles/variables";
+
+.Input {
+  width: 100%;
+  background: $color-white;
+  border: 1px solid $color-grey;
+  padding: map-get($spacers, 5) map-get($spacers, 4);
+  font-size: 18px;
+  line-height: 24px;
+
+  &:hover {
+    border-color: $color-charcoal;
+  }
+  &:active,
+  &:focus {
+    border-color: $color-charcoal;
+    border-width: 2px;
+  }
+
+  &.error {
+    border-color: $color-error;
+  }
+}

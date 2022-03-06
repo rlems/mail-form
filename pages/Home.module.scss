@@ -1,0 +1,9 @@
+@import "styles/variables";
+
+.subtitle {
+    font-family: NB International Pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-bottom: map-get($spacers, 6);
+}

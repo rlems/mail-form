@@ -1,0 +1,15 @@
+@import 'styles/variables';
+
+.label {
+  position: relative;
+  opacity: .5;
+  font-size: 1.4rem;
+  margin-bottom: map-get($spacers, 3);
+
+  &:before {
+    content: "[";
+  }
+  &:after {
+    content: "]";
+  }
+}

@@ -1,0 +1,8 @@
+@import "styles/variables";
+
+.InputError {
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-error;
+  margin-top: map-get($spacers, 3);
+}

@@ -1,0 +1,10 @@
+@import "styles/variables";
+
+.Button {
+  background-color: $color-charcoal;
+  border-radius: 3rem;
+  width: 24.5rem;
+  padding: map-get($spacers, 4);
+  border: none;
+  color: $color-white;
+}
